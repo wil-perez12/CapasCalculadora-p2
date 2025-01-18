@@ -17,7 +17,11 @@
         //para mostar el historial
         public List<string> ObtenerHistorial()
         {
-            
+            Console.WriteLine("Historial de operaciones:");
+            foreach (var item in historial)
+            {
+                Console.WriteLine($"{item}");
+            }
             return historial;
         }
     }
